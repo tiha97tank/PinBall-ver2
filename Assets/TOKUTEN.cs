@@ -24,12 +24,13 @@ public class TOKUTEN : MonoBehaviour
     void Update()
     {
 
-        this.Tokuten.GetComponent<Text>().text = "スコア " + score.ToString();
+        
 
 
     }
     void OnCollisionEnter(Collision other)
     {
+        this.Tokuten.GetComponent<Text>().text = "スコア " + score.ToString();
 
         if (other.gameObject.tag == "SmallStarTag")
         {
